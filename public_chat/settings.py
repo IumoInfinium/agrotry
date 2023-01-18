@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y^&4!sd@_6r==aw6x9f_rge23dh9adsboy#s*hg4s&7y8zx=n+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -85,12 +85,7 @@ WSGI_APPLICATION = 'public_chat.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES={}
 
 
 # Password validation
